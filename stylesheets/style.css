@@ -8,7 +8,8 @@ header{
 .container_header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    gap: 10px
 }
 
 .title{
@@ -20,25 +21,28 @@ header{
     font-style: italic;
 }
 
+.nav{
+    flex-grow: 1;
+}
+
 .nav_menu{
     display: flex;
     align-items: center;
-    padding-bottom: 4px;
-    padding-top: 23px;
-    padding-right: 70px;
-    margin: 0;
     list-style-type: none;
+    justify-content: space-around;
+    gap: 10px
 }
 
 .nav_a{
     color: white;
-    margin-left: 50px;
     text-decoration: 0;
     text-transform: uppercase;
     font-size:19px;
     font-family: "Martian Mono", system-ui;
-    display: flex;
-    justify-content: space-around;
+}
+
+li:nth-child(odd) .nav_a{
+    color: black;
 }
 
 body{
@@ -50,7 +54,7 @@ body{
     display: flex;
 }
 
-.aside_ad{
+.aside_ad {
     display: flex;
     flex-direction: column;
     vertical-align: central;
@@ -61,6 +65,15 @@ body{
     align-items: stretch;
     z-index: initial;
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .aside_ad{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
 }
 
 .p_ad{
