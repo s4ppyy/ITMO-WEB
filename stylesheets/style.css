@@ -1,5 +1,5 @@
 header{
-    background-color: #aa00ff;
+    background-color: #116062;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -8,6 +8,7 @@ header{
 .container_header{
     display: flex;
     flex-direction: row;
+    /*justify-content: space-between;*/
     width: 100%;
     gap: 10px
 }
@@ -30,7 +31,8 @@ header{
     align-items: center;
     list-style-type: none;
     justify-content: space-around;
-    gap: 10px
+    gap: 10px;
+    padding-top: 13px;
 }
 
 .nav_a{
@@ -41,9 +43,9 @@ header{
     font-family: "Martian Mono", system-ui;
 }
 
-li:nth-child(odd) .nav_a{
-    color: black;
-}
+/*li:nth-child(odd) .nav_a{*/
+/*    color: black;*/
+/*}*/
 
 body{
     background-color: #b5ffde;
@@ -59,7 +61,7 @@ body{
     flex-direction: column;
     vertical-align: central;
     flex-basis: 20%;
-    background-color: #aa00ff;
+    background-color: rgba(170, 0, 255, 0.75);
     padding: 0 10px;
     position: sticky;
     align-items: stretch;
@@ -97,7 +99,7 @@ body{
     display: flex;
     justify-content: center;
     font-family: "Martian Mono", system-ui;
-    color: #201ca4;
+    color: #116062;
 }
 
 .topic_1{
