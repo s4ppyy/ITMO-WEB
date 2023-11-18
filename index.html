@@ -4,6 +4,7 @@
     <!link href="stylesheets/outlines.css" rel="stylesheet">
     <!link href="stylesheets/outline-prototype-label.css" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="scripts/load-page-time.js"></script>
     <title>GuitarGuide</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="Гитара, новичкам, начало, обучение">
@@ -15,10 +16,10 @@
         <h1 class="title">GuitarGuide</h1>
         <nav class="nav">
             <ul class="nav_menu">
-                <li><a class="nav_a" href="#">Старт</a></li>
-                <li><a class="nav_a" href="#">Топ треков для начала игры</a></li>
-                <li><a class="nav_a" href="#">Настройки плагинов Guitar Rig</a></li>
-                <li><a class="nav_a" href="#">Полезные материалы</a></li>
+                <li><a class="nav_a__this" href="#">Старт</a></li>
+                <li><a class="nav_a" href="html/tracks.html">Топ треков для начала игры</a></li>
+                <li><a class="nav_a" href="html/plugins.html">Настройки плагинов Guitar Rig</a></li>
+                <li><a class="nav_a" href="html/materials.html">Полезные материалы</a></li>
             </ul>
         </nav>
     </div>
@@ -85,10 +86,12 @@
                 на таких например сыграны почти все песни Нирваны.
             </section>
             <blockquote class="quote_container">
-                <p class="quote"> «Всё можно пережить, если подобрать нужную песню».</p>
-                <cite class="quote_author">Курт Кобейн</cite>
-                <br>
                 <img class="pic_cobain" src="pictures/940425_ra505.jpg" width="300">
+                <br>
+                <div class="quote_and_author">
+                    <p class="quote"> «Всё можно пережить, если подобрать нужную песню».</p>
+                    <cite class="quote_author">Курт Кобейн</cite>
+                </div>
             </blockquote>
             <pre>
                 <code>
@@ -99,13 +102,11 @@
     </div>
 </main>
 <footer class="footer">
-    <br>
+    <div class="time-container">
+        <h4 class="time-load-header">Time performance:</h4>
+        <div class="time-load"></div>
+    </div>
     <a class="a_tg" href="https://t.me/svatanenko">Telegram</a>
-    <br>
-    <br>
 </footer>
 </body>
 </html>
-
-
-<!-- #B512DE #B5FFDE  цвета для темы?? -->
