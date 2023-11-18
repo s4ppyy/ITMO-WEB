@@ -1,5 +1,5 @@
 header{
-    background-color: #aa00ff;
+    background-color: #116062;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -8,7 +8,9 @@ header{
 .container_header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    width: 100%;
+    gap: 10px
 }
 
 .title{
@@ -20,26 +22,30 @@ header{
     font-style: italic;
 }
 
+.nav{
+    flex-grow: 1;
+}
+
 .nav_menu{
     display: flex;
     align-items: center;
-    padding-bottom: 4px;
-    padding-top: 23px;
-    padding-right: 70px;
-    margin: 0;
     list-style-type: none;
+    justify-content: space-around;
+    gap: 10px;
+    padding-top: 13px;
 }
 
 .nav_a{
     color: white;
-    margin-left: 50px;
     text-decoration: 0;
     text-transform: uppercase;
     font-size:19px;
     font-family: "Martian Mono", system-ui;
-    display: flex;
-    justify-content: space-around;
 }
+
+/*li:nth-child(odd) .nav_a{*/
+/*    color: black;*/
+/*}*/
 
 body{
     background-color: #b5ffde;
@@ -50,17 +56,26 @@ body{
     display: flex;
 }
 
-.aside_ad{
+.aside_ad {
     display: flex;
     flex-direction: column;
     vertical-align: central;
     flex-basis: 20%;
-    background-color: #aa00ff;
+    background-color: rgba(170, 0, 255, 0.75);
     padding: 0 10px;
     position: sticky;
     align-items: stretch;
     z-index: initial;
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .aside_ad{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
 }
 
 .p_ad{
@@ -84,7 +99,7 @@ body{
     display: flex;
     justify-content: center;
     font-family: "Martian Mono", system-ui;
-    color: #201ca4;
+    color: #116062;
 }
 
 .topic_1{
