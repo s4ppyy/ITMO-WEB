@@ -56,11 +56,16 @@ document.addEventListener("DOMContentLoaded", function () {
         deleteButton.addEventListener("click", function () {
             removeReservation(index);
             reservationResultClone.remove();
+            let toDelete = document.getElementById("tracklist__track")
+            toDelete.parentElement.remove();
         });
 
         container_form.appendChild(reservationResultClone);
     }
 
+    function deleteItem(){
+
+    }
     function removeReservation(index) {
         savedReservations.splice(index, 1);
         localStorage.setItem("reservations", JSON.stringify(savedReservations));
