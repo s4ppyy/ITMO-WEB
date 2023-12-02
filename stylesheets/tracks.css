@@ -1,11 +1,11 @@
-header{
+header {
     background-color: #116062;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.container_header{
+.container_header {
     display: flex;
     flex-direction: row;
     /*justify-content: space-between;*/
@@ -13,7 +13,7 @@ header{
     gap: 10px
 }
 
-.title{
+.title {
     color: #ffffff;
     font: bold 48px "Martian Mono", system-ui;
     display: flex;
@@ -22,11 +22,11 @@ header{
     font-style: italic;
 }
 
-.nav{
+.nav {
     flex-grow: 1;
 }
 
-.nav_menu{
+.nav_menu {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -35,20 +35,20 @@ header{
     padding-top: 13px;
 }
 
-.nav_a{
+.nav_a {
     color: white;
     text-decoration: 0;
     text-transform: uppercase;
-    font-size:19px;
+    font-size: 19px;
     font-family: "Martian Mono", system-ui;
 }
 
-.nav_a__this{
+.nav_a__this {
     color: rgba(84, 255, 170, 0.84);
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: bold;
-    font-size:19px;
+    font-size: 19px;
     padding: 0.5rem;
     border: solid 2px rgba(136, 252, 189, 0.84);
     font-family: "Martian Mono", system-ui;
@@ -58,12 +58,12 @@ header{
 /*    color: black;*/
 /*}*/
 
-body{
+body {
     background-color: rgba(227, 255, 240, 0.84);
     margin: 0;
 }
 
-.container_main{
+.container_main {
     display: flex;
 }
 
@@ -81,34 +81,35 @@ body{
 }
 
 @media screen and (max-width: 700px) {
-    .aside_ad{
+    .aside_ad {
         display: none;
     }
-    .title{
+
+    .title {
         display: none;
     }
 }
 
-.p_ad{
+.p_ad {
     padding-top: 250px;
     color: #116062;
     font-weight: bold;
 }
 
-.praying_hands{
+.praying_hands {
     justify-content: center;
     color: #116062;
 
 }
 
-.topic-container{
+.topic-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 4rem 0 2rem;
 }
 
-.topic-container__header{
+.topic-container__header {
     display: flex;
     justify-content: center;
     font-family: "Times New Roman", system-ui;
@@ -116,7 +117,7 @@ body{
     font-size: 2rem;
 }
 
-.topic__tracklist{
+.topic__tracklist {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +128,7 @@ body{
     padding-bottom: 3em;
 }
 
-.topic__tracklist > li > a{
+.topic__tracklist > li > a {
     text-decoration: underline;
     padding: 0.5rem;
     font-family: "Martian Mono", system-ui;
@@ -136,22 +137,121 @@ body{
     font-weight: bold;
 }
 
-.topic1__header{
+.chord-meme {
+    height: auto;
+    width: auto;
+    padding-bottom: 1rem;
+}
+
+.topic1__form-explain {
     display: flex;
     justify-content: center;
     font-family: "Times New Roman", system-ui;
     color: #116062;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
-.topic1{
+.container_main__song-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #116062;
+    border-radius: 20px;
+    padding: 1.2rem 7rem;
+}
+
+.request-form_font {
+    font-family: "Martian Mono", system-ui;
+    color: #116062;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.request__input {
+    padding: 0.1rem 1.5rem;
+}
+
+.song-request__name {
+    padding-bottom: 0.5rem;
+}
+
+.song-request__suggestedURL {
+    padding: 0.5rem;
+}
+
+.song-request__authorEmail {
+    padding: 0.5rem;
+}
+
+.submit-request {
+    margin-top: 1.2rem;
+    background-color: rgba(171, 238, 208, 0.84);
+    border-radius: 20px;
+    padding: 0.2rem 0.2rem;
+}
+
+.container-text {
+    display: flex;
+    justify-content: center;
+    font-family: "Times New Roman", system-ui;
+    color: #116062;
+    font-size: 1.7rem;
+}
+
+.requests-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation_label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.tracklist__track{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #116062;
+    border-radius: 20px;
+    padding: 0.4rem 0.4rem;
+}
+
+.reservation_label {
+    font-family: "Times New Roman", system-ui;
+    color: #116062;
+    font-size: 1.7rem;
+}
+
+.reservation_delete{
+    margin-top: 1.2rem;
+    background-color: rgba(171, 238, 208, 0.84);
+    border-radius: 20px;
+    /*padding: 0.2rem 0.2rem;*/
+    width: 10rem;
+}
+
+.topic1__header {
+    display: flex;
+    justify-content: center;
+    font-family: "Times New Roman", system-ui;
+    color: #116062;
+    font-size: 1.7rem;
+}
+
+.topic1 {
     font-family: "Martian Mono", system-ui;
     color: #000000;
     font-size: 1.5rem;
     padding-bottom: 3rem;
 }
 
-.footer{
+.footer {
     background-color: #116062FF;
     display: flex;
     justify-content: center;
@@ -161,7 +261,7 @@ body{
     align-items: center;
 }
 
-.a_tg{
+.a_tg {
     color: #ffffff;
     font-size: 25px;
     justify-content: center;
@@ -170,22 +270,22 @@ body{
     font-family: "Martian Mono", system-ui;
 }
 
-.nav_a:hover{
+.nav_a:hover {
     text-decoration: underline;
 }
 
-.time-container{
+.time-container {
     display: flex;
     padding-right: 5rem;
     align-items: center;
 }
 
-.time-load-header{
+.time-load-header {
     color: white;
     padding-right: 0.5rem;
 }
 
-.time-load{
+.time-load {
     color: white;
 }
 

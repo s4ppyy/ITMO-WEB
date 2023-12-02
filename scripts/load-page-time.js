@@ -4,4 +4,5 @@ window.addEventListener("load", function () {
         const loadTime = performance.now();
         durationElement.textContent = loadTime.toFixed(1) + "mc";
     }
+    window.open('mailto')
 })
