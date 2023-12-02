@@ -90,7 +90,11 @@
 
                         <label class="reservation_label added-tracks_font">Email:</label>
 
-                        <button class="reservation_delete added-tracks_font">Удалить</button>
+                        <button class="reservation_delete added-tracks_font" onclick="deleteElement(this)">Удалить</button>
+                        <script>function deleteElement(button){
+                            let elem = button.closest('.tracklist__track')
+                            elem.remove();
+                        }</script>
                     </div>
                 </template>
             </section>
