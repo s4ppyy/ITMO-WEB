@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="scripts/load-page-time.js"></script>
     <script src="scripts/current-page.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts/registration-form.js"></script>
     <title>GuitarGuide</title>
     <meta charset="UTF-8">
     <meta name="keywords" content="Гитара, новичкам, начало, обучение">
@@ -19,8 +22,8 @@
             <ul class="nav_menu">
                 <li><a data-id="index" class="nav_a" href="index.html">Старт</a></li>
                 <li><a data-id="tracks" class="nav_a" href="html/tracks.html">Топ треков для начала игры</a></li>
-                <li><a data-id="plugins" class="nav_a" href="html/plugins.html">Настройки плагинов Guitar Rig</a></li>
-                <li><a data-id="materials" class="nav_a" href="html/materials.html">Полезные материалы</a></li>
+                <li><a data-id="plugins" class="nav_a" href="html/plugins.html">Полезные материалы</a></li>
+                <li><button class="registration-button" id="registration-button">Регистрация</button></li>
             </ul>
         </nav>
     </div>
@@ -99,6 +102,25 @@
                     sudo rm -rf /~    :)))
                 </code>
             </pre>
+            <h2 class="section_header">Наши дорогие юзеры</h2>
+            <div class="preloader-container">
+                <div class="preloader"></div>
+            </div>
+            <section class="users-container">
+                <div class="error-message">
+                    <p class="error-text"></p>
+                </div>
+                <div class="cards-container">
+                    <template id="user-card-template">
+                        <div class="user-card">
+                            <p class="user_info username"></p>
+                            <p class="user_info name"></p>
+                            <p class="user_info email"></p>
+                            <p class="user_info phone"></p>
+                        </div>
+                    </template>
+                </div>
+            </section>
         </div>
     </div>
 </main>

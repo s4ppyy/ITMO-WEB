@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bbb715ab-7fea-4692-981e-10f5064e10b9" name="Changes" comment="lab4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/tracks.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/tracks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/tracks.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/tracks.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;style-fix&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Danee/WebstormProjects/Web-Lab1&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
@@ -99,6 +103,7 @@
       <workItem from="1700296902915" duration="5741000" />
       <workItem from="1700515013018" duration="375000" />
       <workItem from="1701470638213" duration="8122000" />
+      <workItem from="1702718838732" duration="6730000" />
     </task>
     <task id="LOCAL-00001" summary="add_css">
       <option name="closed" value="true" />

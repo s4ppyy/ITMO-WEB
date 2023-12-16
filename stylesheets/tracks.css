@@ -289,5 +289,68 @@ body {
     color: white;
 }
 
+.swal2-popup {
+    border-radius: 8px;
+    background-color: rgb(227, 255, 240);
+    max-width: 500px;
+    padding: 20px 20px 30px;
+    border: 2px solid #116062;
+}
+
+.swal2-title {
+    font-family: "Times New Roman", system-ui;
+    color: #116062;
+    font-size: 3rem;
+}
+
+.swal2-input {
+    border-radius: 5px;
+    background-color: #dce8f2;
+    max-width: 500px;
+    /*color: #070c11;*/
+    color: #116062;
+}
+
+.swal2-styled {
+    background-color: #116062;
+}
+
+.swal2-html-container label{
+    color: #116062;
+    font-size: 2rem;
+}
+
+.swal2-confirm {
+    background-color: #116062;
+    color: #070c11 ;
+    transition: 0.2s;
+}
+
+.swal2-confirm:hover {
+    background-color: #116062;
+}
+
+.swal2-validation-message {
+    background-color: rgb(227, 255, 240);
+    color: #116062;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.registration-button{
+    color: white;
+    background-color: #116062;
+    border: none;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size:19px;
+    font-family: "Martian Mono", system-ui;
+}
+
+.registration-button:hover {
+    text-decoration: underline white;
+}
+
+
 
 

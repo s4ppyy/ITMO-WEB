@@ -10,7 +10,7 @@ header{
     flex-direction: row;
     /*justify-content: space-between;*/
     width: 100%;
-    gap: 10px
+    gap: 10px;
 }
 
 .title{
@@ -220,4 +220,111 @@ body{
     color: white;
 }
 
+.users-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-card {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    border: 2px solid #116062;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.user_info{
+    font-family: "Times New Roman", system-ui;
+    color: #116062;
+    font-size: 1rem;
+}
+
+.preloader-container{
+    display: flex;
+    justify-content: center;
+}
+
+.preloader {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-top: 6px solid #070c11;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.cards-container{
+    display: flex;
+}
+
+.swal2-popup {
+    border-radius: 8px;
+    background-color: rgb(227, 255, 240);
+    max-width: 500px;
+    padding: 20px 20px 30px;
+    border: 2px solid #116062;
+}
+
+.swal2-title {
+    font-family: "Times New Roman", system-ui;
+    color: #116062;
+    font-size: 3rem;
+}
+
+.swal2-input {
+    border-radius: 5px;
+    background-color: #dce8f2;
+    max-width: 500px;
+    /*color: #070c11;*/
+    color: #116062;
+}
+
+.swal2-styled {
+    background-color: #116062;
+}
+
+.swal2-html-container label{
+    color: #116062;
+    font-size: 2rem;
+}
+
+.swal2-confirm {
+    background-color: #116062;
+    color: #070c11 ;
+    transition: 0.2s;
+}
+
+.swal2-confirm:hover {
+    background-color: #116062;
+}
+
+.swal2-validation-message {
+    background-color: rgb(227, 255, 240);
+    color: #116062;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.registration-button{
+    color: white;
+    background-color: #116062;
+    border: none;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size:19px;
+    font-family: "Martian Mono", system-ui;
+}
+
+.registration-button:hover {
+    text-decoration: underline white;
+}
 
